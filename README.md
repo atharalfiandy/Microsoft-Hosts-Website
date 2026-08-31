@@ -172,3 +172,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+## License
+
+[![CC0](https://raw.githubusercontent.com/atharalfiandy/Microsoft-Hosts-Website/8b1d03c699d13e9e01da8bf1baf8eae0b583f201/License/License.svg)](LICENSE)
