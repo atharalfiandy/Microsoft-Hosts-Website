@@ -2,6 +2,8 @@
 
 A set of safe, automated tools to view, back up, update, and manage the Windows `hosts` file using **Batch (.bat)** and **Python (.py)**.
 
+<img width="576" height="364" alt="Image" src="https://github.com/atharalfiandy/Microsoft-Hosts-Website/blob/main/Images/images_hosts.png?raw=true" />
+
 ---
 
 ## 📌 Overview
