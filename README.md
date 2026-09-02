@@ -142,25 +142,25 @@ def main():
         else:
             print("Invalid domain format! Domain must end with .com or .net")
 
-    # Step 6: Print "virtual_hosts.wanb" 10 times in green
+    # Step 4: Print "virtual_hosts.wanb" 10 times in green
     for _ in range(10):
         print(f"{GREEN}virtual_hosts.wanb{RESET}")
 
-    # Step 7: Apply custom domain setup
+    # Step 5: Apply custom domain setup
     add_to_hosts(clean_domain)
 
-    # Step 8: Start background web server on Port 80 (HTTP)
+    # Step 6: Start background web server on Port 80 (HTTP)
     server_thread = threading.Thread(target=run_server, args=(path, 80), daemon=True)
     server_thread.start()
 
-    time.sleep(1) # Give server time to bind
+    time.sleep(0) # Give server time to bind
 
-    # Step 9: Open site in default browser using custom domain name
+    # Step 7: Open site in default browser using custom domain name
     url_to_open = f"http://{clean_domain}"
     print(f"Opening website at: {url_to_open}")
     webbrowser.open(url_to_open)
 
-    # Step 10: Keep Python script open so website remains active without crashing
+    # Step 8: Keep Python script open so website remains active without crashing
     print("\nWebsite is live! Keep this Python window open.")
     print("Press Ctrl+C inside this window to stop hosting.")
     
